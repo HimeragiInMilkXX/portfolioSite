@@ -1,0 +1,175 @@
+{
+
+    "portfolio_site": {
+
+        "displayName": "Oscar's Portfolio Site",
+        "desc": "A combination of a reactjs main site with the solidjs+django blog site. Remade two times, each time removing away main features to achieve balanced simplicity, readability and gimmick.",
+        "gallery": [ "1.jpg", "2.jpg", "3.jpg", "4.jpg" ],
+        "concept": {
+
+            "why": "Lorem ipsum dolor sit amet. Soluta voluptate libero maiores tenetur nostrum magnam vitae voluptas blanditiis ab temporibus harum nihil ullam, facere, magni odio commodi! Iure, quis quos!",
+            "what": "Lorem ipsum dolor sit amet. Soluta voluptate libero maiores tenetur nostrum magnam vitae voluptas blanditiis ab temporibus harum nihil ullam, facere, magni odio commodi! Iure, quis quos!",
+            "how": "Lorem ipsum dolor sit amet. Soluta voluptate libero maiores tenetur nostrum magnam vitae voluptas blanditiis ab temporibus harum nihil ullam, facere, magni odio commodi! Iure, quis quos!",
+            "when": "Lorem ipsum dolor sit amet. Soluta voluptate libero maiores tenetur nostrum magnam vitae voluptas blanditiis ab temporibus harum nihil ullam, facere, magni odio commodi! Iure, quis quos!"
+
+        },
+        "design": {
+
+            "styles": {
+
+                "Simplist": "fluent:table-simple-24-regular",
+                "Vector": "mdi:vector-line",
+                "Monotone": "openmoji:black-circle",
+                "Newspaper": "meteor-icons:newspaper"
+
+
+            },
+            "drafts": {
+
+                "First Version Main Gimmick": "/project/portfolio_site/design/change.gif",
+                "First Version - Draft": "/project/portfolio_site/design/first_draft.jpeg",
+                "Home Page - First Version": "/project/portfolio_site/design/first_example_one.png",
+                "Skills Page - First Version": "/project/portfolio_site/design/first_example_two.png",
+                "Project Page - Brainstorm Draft": "/project/portfolio_site/design/project_draft.jpeg"
+
+            },
+            "color": {
+
+                "colors": ["#000000", "#FFFFFF"],
+                "monotone": true,
+                "reason": "It is the first project I have to also handle the design, so I thought picking monotone as theme will be the best to start, and soon with trial and error I had an idea of a 'newspaper' style and that's when the colors were fixed"
+
+            }
+
+        },
+        "features": {
+
+            "Smooth Navigation": {
+
+                "photo": "hash.gif",
+                "description": "Sub-navigation is implemented to elinminate the need of scrolling through. Information are broken into small parts so audiences can find easily. For small devices, sub-navigation are hidden but all sections are simplified."
+
+            },
+            "Interact-Informative": {
+
+                "photo": "ii.gif",
+                "description": "Instead of plain presentation of a bulk of information, most of the sections are designed to be interactive, equipped with intuitive interactions and effect, at the smallest extent to trigger visual experiences."
+
+            }
+
+        },
+        "dev": {
+
+            "design": [ "Figma", "Gitmind" ],
+            "frontend": [ "ReactJS", "TailwindCSS", "GSAP" ],
+            "devOps": [ "AWS", "GitHub" ],
+            "images": [ "Gemini" ]
+
+        },
+        "reflect": {
+
+            "succeed": [
+                "Well-structured and efficient remake",
+                "Utilise monotone and accent colors",
+                "Appealing presentation of information "
+            ],
+            "fail": [
+                "Precisely control spaces and positions",
+                "Dedicate to forbid old solution early",
+                "Provide sufficient resources"
+            ],
+            "summary": "Overall, I would say if I could forbid the old version at an earlier stage for the current one, things could have been smoother and easier. However, it was also because of the procastination I manage to obtain more knowledge on project structure before moving on. Depsite all, I can confidently say as a portfolio site it can achieve what it is supposed to achieve and can show my personal styles very clearly. Since cleaner and more relaxed layout can absolutely be achieved, adjustments will keep on."
+
+        },
+        "contribs": {
+
+            "oscar": {
+
+                "role": "Stability Tester",
+                "link": "https://www.instagram.com/osuk.aa/"
+
+            },
+            "anggor": {
+
+                "role": "Work-Life Balance Leader",
+                "link": "https://www.instagram.com/osuk.aa/"
+
+            }
+
+        },
+        "flow": [
+            {
+                "id": 1,
+                "text": "🚀 Project Launch",
+                "start": "2026-03-02",
+                "end": "2026-03-09",
+                "duration": 7,
+                "progress": 0,
+                "type": "summary",
+                "open": true
+            },
+            {
+                "id": 2,
+                "text": "Planning & Setup",
+                "start": "2026-03-02",
+                "end": "2026-03-03",
+                "duration": 1,
+                "progress": 100,
+                "type": "task",
+                "parent": 1
+            },
+            {
+                "id": 3,
+                "text": "Design UI mockups",
+                "start": "2026-03-03",
+                "end": "2026-03-05",
+                "duration": 2,
+                "progress": 80,
+                "type": "task",
+                "parent": 1
+            },
+            {
+                "id": 4,
+                "text": "Backend API",
+                "start": "2026-03-03",
+                "end": "2026-03-06",
+                "duration": 3,
+                "progress": 60,
+                "type": "task",
+                "parent": 1
+            },
+            {
+                "id": 5,
+                "text": "Frontend Integration",
+                "start": "2026-03-05",
+                "end": "2026-03-08",
+                "duration": 3,
+                "progress": 20,
+                "type": "task",
+                "parent": 1
+            },
+            {
+                "id": 6,
+                "text": "QA & Testing",
+                "start": "2026-03-07",
+                "end": "2026-03-08",
+                "duration": 1,
+                "progress": 0,
+                "type": "task",
+                "parent": 1
+            },
+            {
+                "id": 7,
+                "text": "Deploy to production",
+                "start": "2026-03-09",
+                "end": "2026-03-09",
+                "duration": 1,
+                "progress": 0,
+                "type": "task",
+                "parent": 1
+            }
+        ]
+
+    }
+
+}

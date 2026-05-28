@@ -1,0 +1,50 @@
+{
+  "1": {
+    "name": "Requirements and scope",
+    "description": "I clarify the project goals, main user flows, and success metrics, then turn them into a clear feature list and scope.",
+    "icon": "tabler:ear",
+    "color": "#FFE0B2"
+  },
+  "2": {
+    "name": "UX design and UI direction",
+    "description": "I sketch low-fidelity wireframes for key pages, plan layout and navigation, and decide on basic colors and typography.",
+    "icon": "fluent:draw-image-24-regular",
+    "color": "#B3E5FC"
+  },
+  "3": {
+    "name": "Architecture, data model, and API design",
+    "description": "I design the overall architecture, define the database schema, and plan the API endpoints and payloads.",
+    "icon": "material-symbols:map-outline-rounded",
+    "color": "#C8E6C9"
+  },
+  "4": {
+    "name": "Frontend implementation with mock data",
+    "description": "I build the frontend page by page using mock data, making each component responsive and accessible.",
+    "icon": "humbleicons:code",
+    "color": "#E1BEE7"
+  },
+  "5": {
+    "name": "Backend and API implementation",
+    "description": "I implement the backend and REST API according to the plan, including authentication, validation, and core logic.",
+    "icon": "mynaui:api",
+    "color": "#FFF9C4"
+  },
+  "6": {
+    "name": "Incremental integration",
+    "description": "I connect the frontend to the backend one endpoint at a time to verify each feature works end-to-end.",
+    "icon": "clarity:connect-line",
+    "color": "#D0EFFF"
+  },
+  "7": {
+    "name": "Testing and quality assurance",
+    "description": "I test critical user flows, fix bugs, and check behavior across different devices and environments.",
+    "icon": "qlementine-icons:test-16",
+    "color": "#F8BBD0"
+  },
+  "8": {
+    "name": "Deployment and maintenance",
+    "description": "I deploy the app to the cloud, set up monitoring and logging, and keep improving and fixing issues over time.",
+    "icon": "humbleicons:upload",
+    "color": "#ECEFF1"
+  }
+}

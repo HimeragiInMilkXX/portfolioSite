@@ -1,0 +1,9 @@
+{
+    "": [ "oscar", "roles", "highlights", "comments", "nextstep" ],
+    "work": [ "main", "side", "lab" ],
+    "about": [ "bio", "skills", "timeline", "nextstep" ],
+    "blog": [ "featured", "latest" ],
+    "services": [ "capability", "workflow", "case", "nextstep" ],
+    "project": [ "concept", "design", "features", "dev.", "flow", "reflect.", "contribs." ],
+    "contact": [ "enquiry", "sns" ]
+}

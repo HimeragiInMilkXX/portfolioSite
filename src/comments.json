@@ -1,0 +1,62 @@
+{
+    "1": {
+        "name": "OscartheGae",
+        "aka": "Creator of Catonese",
+        "comment": "Incrediably efficient workflow from design to production, I like how he actively will provide followup opinions without requesting",
+        "url": "https://picsum.photos/200?random=1"
+    },
+    "2": {
+        "name": "TechLead_Sarah",
+        "aka": "The Debugging Demon",
+        "comment": "Oscar's refactoring skills are honestly scary; he turned our spaghetti code into a five-star meal overnight without breaking a single dependency.",
+        "url": "https://picsum.photos/200?random=2"
+    },
+    "3": {
+        "name": "StartupSteve",
+        "aka": "Pivot King",
+        "comment": "Total lifesaver on the frontend. He has this knack for catching UI bottlenecks before they even happen, and his CSS wizardry is next level.",
+        "url": "https://picsum.photos/200?random=3"
+    },
+    "4": {
+        "name": "PixelPerfect_Dave",
+        "aka": "The Ruler Tool",
+        "comment": "Most engineers ignore the padding-top by 2px, but Oscar sees it. It’s rare to find someone who actually cares about the integrity of the original mockup.",
+        "url": "https://picsum.photos/200?random=4"
+    },
+    "5": {
+        "name": "DevOps_Dan",
+        "aka": "Captain Container",
+        "comment": "He's the only dev I know who doesn't complain about documentation. His deployment pipelines are clean, fast, and—most importantly—they just work.",
+        "url": "https://picsum.photos/200?random=5"
+    },
+    "6": {
+        "name": "CoffeeAddict99",
+        "aka": "Night Owl",
+        "comment": "Incredible turnaround time. I sent a Slack message at 2 AM thinking he'd see it in the morning, but the PR was already merged by 2:15.",
+        "url": "https://picsum.photos/200?random=6"
+    },
+    "7": {
+        "name": "BackendBenny",
+        "aka": "SQL Whisperer",
+        "comment": "His ability to bridge the gap between complex logic and a smooth UI is unmatched. He basically speaks fluent Browser.",
+        "url": "https://picsum.photos/200?random=7"
+    },
+    "8": {
+        "name": "ProjectManager_Pat",
+        "aka": "The Deadline",
+        "comment": "Oscar doesn't just meet deadlines; he deletes them. His focus during a sprint is genuinely intimidating but the results are flawless.",
+        "url": "https://picsum.photos/200?random=8"
+    },
+    "9": {
+        "name": "DesignDiva_Zoe",
+        "aka": "Vibe Curator",
+        "comment": "I gave him a chaotic Figma file and he somehow turned it into a responsive masterpiece. His intuition for UX is honestly a cheat code.",
+        "url": "https://picsum.photos/200?random=9"
+    },
+    "10": {
+        "name": "JuniorDev_Leo",
+        "aka": "The Question Mark",
+        "comment": "Reviewed my code and didn't even make me feel bad about it. Oscar’s logic is so clean it’s basically art. Absolute legend.",
+        "url": "https://picsum.photos/200?random=10"
+    }
+}
