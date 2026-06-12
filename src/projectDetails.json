@@ -4,7 +4,7 @@
 
         "displayName": "Oscar's Portfolio Site",
         "desc": "A combination of a reactjs main site with the solidjs+django blog site. Remade two times, each time removing away main features to achieve balanced simplicity, readability and gimmick.",
-        "gallery": [ "1.jpg", "2.jpg", "3.jpg", "4.jpg" ],
+        "gallery": [ "portfolio_site.png", "home.png", "service.png", "interaction.gif" ],
         "concept": {
 
             "why": "Lorem ipsum dolor sit amet. Soluta voluptate libero maiores tenetur nostrum magnam vitae voluptas blanditiis ab temporibus harum nihil ullam, facere, magni odio commodi! Iure, quis quos!",
