@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# Oscar Portfolio Website（AWS ホスティング）
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+このリポジトリは、AWS 上にホスティングしているポートフォリオサイトのコードです。  
+実際のサイトはこちらからご覧いただけます：  
+https://d2qjfmxptfqch4.cloudfront.net/
 
-Currently, two official plugins are available:
+## 子ブログについて
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ポートフォリオ内でのブログはこちらです：  
+https://d1ulrv6ofvvsmv.cloudfront.net/
 
-## React Compiler
+ブログのソースコードは、以下の GitHub リポジトリに分割して管理しています。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- フロントエンド：  
+  https://github.com/HimeragiInMilkXX/portfolioBlog-view
+- バックエンド：  
+  https://github.com/HimeragiInMilkXX/portfolioBlog-api
 
-## Expanding the ESLint configuration
+## 自己紹介
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+香港出身の Ang Chun Ho と申します。  
+日本には約 3 年半在住しており、2027 年に卒業予定です。
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+職種としては Web エンジニアを志望しており、フロントエンド・バックエンド両方の開発経験があります。  
+フレームワークは、フロントエンドに Vue、バックエンドに Spring Boot を主に使用しています。
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+現在は就職活動中で、フロントエンドエンジニア／バックエンドエンジニア／フルスタックエンジニアいずれかのポジションを目指しています。
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 使用技術
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- フロントエンド：React.js, shadcn/ui  
+- DevOps：AWS S3 バケット, CloudFront  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## サイトについての補足
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Web サイト上の情報は、特に制作物一覧の部分など、まだすべては掲載できていません。  
+  プロジェクトの詳細については、各 GitHub リポジトリをご参照ください。
+- UI はすべてのデバイスで快適に閲覧できるようレスポンシブ対応しており、  
+  PC・タブレット・スマートフォンなど、お手元の環境からそのままご覧いただけます。
