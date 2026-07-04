@@ -1,5 +1,6 @@
 import type { FunctionComponent } from "react";
 import projects from "../../projects.json"
+import { asset } from "@/lib/assets";
 
 const HoverTextImage: FunctionComponent<{ url: string, project: string, imgClasses?: string, sectionClasses?: string }> = ( { url, project, imgClasses, sectionClasses } ) => {
 
@@ -7,7 +8,7 @@ const HoverTextImage: FunctionComponent<{ url: string, project: string, imgClass
 
         <>
         
-            <img src={`${url}/${project.toLowerCase()}.png`} alt="" className={`object-cover w-full transition-all relative ${imgClasses} h-full`} />
+            <img src={asset(`${url}/${project.toLowerCase()}.png`)} alt="" className={`object-cover w-full transition-all relative ${imgClasses} h-full`} />
 
             <section className={`absolute inset-0 justify-center left-1/8 flex flex-col gap-3 opacity-0 w-4/5 transition-all ${sectionClasses}`}>
 

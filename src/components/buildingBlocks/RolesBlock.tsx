@@ -8,6 +8,7 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import DraftCarousel from "./project/design/DraftCarousel";
+import { asset } from "@/lib/assets";
 
 const RolesBlock: FunctionComponent<{ children: React.ReactNode, works: { [desc: string]: string }, url: string, role: string, classes: string }> = ( { children, works, url, role, classes } ) => {
 
@@ -15,7 +16,7 @@ const RolesBlock: FunctionComponent<{ children: React.ReactNode, works: { [desc:
 
         <Dialog>
             <DialogTrigger className={`rolesBlock relative grow max-lg:min-w-55 max-lg:max-w-90 ${classes} transition-all hover:cursor-pointer`}>
-                <img src={url} alt="" className="blur-[2px] pointer-events-none"/>
+                <img src={asset(url)} alt="" className="blur-[2px] pointer-events-none"/>
                 <h2 className="absolute left-0 right-0 bottom-4.5 flex justify-center items-center text-4xl h-full gap-1.5 pointer-events-none transition-all"> <span className="max-lg:ml-6 font-light text-xl inline-block pb-3 whitespace-nowrap">I'm a</span> <br/>{role} </h2>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[60vw]">

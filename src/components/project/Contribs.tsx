@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/popover"
 import useViewport from "@/utils/useViewport"
 import { useParams } from "react-router-dom"
+import { asset } from "@/lib/assets"
 
 const ContribsBubble: FunctionComponent<{ name: string, data: ProjectDetails_Contributor }> = ( { name, data: { role, link } } ) => {
 
@@ -24,14 +25,14 @@ const ContribsBubble: FunctionComponent<{ name: string, data: ProjectDetails_Con
         width >= 768 ?
 
         <HoverCard>
-            <HoverCardTrigger><img src={`/project/${project}/contribs/${name}.jpg`} alt="" className="max-w-12 rounded-full aspect-square object-cover"/></HoverCardTrigger>
+            <HoverCardTrigger><img src={asset(`/project/${project}/contribs/${name}.jpg`)} alt="" className="max-w-12 rounded-full aspect-square object-cover"/></HoverCardTrigger>
             <HoverCardContent className="flex items-center gap-1.5 w-fit">
                 <a className="text-2xl text-blue-800" href={link} target="_blank"> {name} </a> - <p className="text-black/50 leading-none relative top-0.5"> as {role} </p>
             </HoverCardContent>
         </HoverCard>
         :
         <Popover>
-            <PopoverTrigger><img src={`/project/${project}/contribs/${name}.jpg`} alt="" className="max-w-12 rounded-full aspect-square object-cover"/></PopoverTrigger>
+            <PopoverTrigger><img src={asset(`/project/${project}/contribs/${name}.jpg`)} alt="" className="max-w-12 rounded-full aspect-square object-cover"/></PopoverTrigger>
             <PopoverContent className="flex items-center gap-1.5 w-fit">
                 <a className="text-2xl text-blue-800" href={link} target="_blank"> {name} </a> - <p className="text-black/50 leading-none relative top-0.5"> as {role} </p>
             </PopoverContent>

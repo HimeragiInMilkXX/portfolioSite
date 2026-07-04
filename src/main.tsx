@@ -19,28 +19,31 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-const router = createBrowserRouter([
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
 
-	{
+const router = createBrowserRouter(
+	[
+		{
 
-		path: "/",
-		element: <Default/>,
-		children: [
+			path: "/",
+			element: <Default/>,
+			children: [
 
-			{ path: "/", element: <Home/> },
-			{ path: "/work", element: <Work/> },
-			{ path: "/about", element: <About/> },
-			{ path: "/blog", element: <Blog/> },
-			{ path: "/services", element: <Services/> },
-			{ path: "/contact", element: <Contact/> },
-			{ path: "/project/:project", element: <Project/>},
-			{ path: "*", element: <NotFound/> }
+				{ path: "/", element: <Home/> },
+				{ path: "/work", element: <Work/> },
+				{ path: "/about", element: <About/> },
+				{ path: "/blog", element: <Blog/> },
+				{ path: "/services", element: <Services/> },
+				{ path: "/contact", element: <Contact/> },
+				{ path: "/project/:project", element: <Project/>},
+				{ path: "*", element: <NotFound/> }
 
-		]
+			]
 
-	}, /*{ path: "/test", element: <Test/>},*/
-
-]);
+		}, /*{ path: "/test", element: <Test/>},*/
+	],
+	{ basename }
+);
 
 createRoot(document.getElementById('root')!).render(
 

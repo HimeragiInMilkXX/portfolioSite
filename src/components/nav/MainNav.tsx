@@ -14,6 +14,7 @@ import NavLink from "./NavLink";
 import { HashLink } from "react-router-hash-link"
 import Download from "@/pages/Download";
 import { useState } from "react";
+import { asset } from "@/lib/assets";
 
 function MainNav() {
 
@@ -25,7 +26,7 @@ function MainNav() {
 
         <nav className="max-md:justify-between md:items-start md:h-dvh md:w-50 md:fixed md:flex-col md:p-12 md:pt-15 items-center relative h-20 px-6 py-4.5 w-full left-0 top-0 box-border flex gap-12">
 
-            <HashLink to="/#" className="md:h-fit h-full"><img src="/mylogo.svg" alt="" className="md:scale-120 md:h-fit relative origin-left h-full"/></HashLink>
+            <HashLink to="/#" className="md:h-fit h-full"><img src={asset("/mylogo.svg")} alt="" className="md:scale-120 md:h-fit relative origin-left h-full"/></HashLink>
 
             <ul className="uppercase md:flex list-none text-2xl font-light flex-col gap-6 hidden items-start">
 
@@ -54,7 +55,7 @@ function MainNav() {
                         <DrawerHeader className="p-0 w-fit">
 
                             <DrawerTitle>
-                                <HashLink to="/#"><img src="/mylogo.svg" alt="" className="relative h-24"/></HashLink>
+                                <HashLink to="/#"><img src={asset("/mylogo.svg")} alt="" className="relative h-24"/></HashLink>
                             </DrawerTitle>
 
                             <DrawerDescription className="hidden"></DrawerDescription>

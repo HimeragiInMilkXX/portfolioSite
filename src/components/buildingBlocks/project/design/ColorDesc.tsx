@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import type { FunctionComponent } from "react";
+import { asset } from "@/lib/assets";
 
 const ColorDesc: FunctionComponent<{ styles: { [style: string]: string }, color: { colors: string[]; monotone: boolean; reason: string; }, classes: string }> = ({ styles, color: { colors, monotone, reason }, classes="" } ) => {
 
@@ -56,7 +57,7 @@ const ColorDesc: FunctionComponent<{ styles: { [style: string]: string }, color:
 
                     { monotone && <section className="flex flex-col gap-1.5 w-15">
 
-                        <div className="aspect-square border-2 bg-[url(/project/colorWheel.png)] bg-cover bg-center bg-no-repeat"></div>
+                        <div className="aspect-square border-2 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${asset("/project/colorWheel.png")})` }}></div>
                         <h6 className="text-center text-xs"> All Colors </h6>
 
                     </section> }

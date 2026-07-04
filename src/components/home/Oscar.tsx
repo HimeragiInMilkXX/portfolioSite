@@ -1,4 +1,5 @@
 import HashSection from "../buildingBlocks/HashSection"
+import { asset } from "@/lib/assets"
 
 const Oscar = () => {
 
@@ -6,7 +7,7 @@ const Oscar = () => {
 
         <HashSection id="oscar" classes="max-lg:flex-col w-full flex gap-12 justify-center items-center">
 
-            <p className="lg:block hidden "><img src="/home/work.png" alt="oscar's working" className="object-contain max-h-125.5" style={{ filter: 'drop-shadow(0px 2px 0.1rem #000000)'}}/></p>
+            <p className="lg:block hidden "><img src={asset("/home/work.png")} alt="oscar's working" className="object-contain max-h-125.5" style={{ filter: 'drop-shadow(0px 2px 0.1rem #000000)'}}/></p>
 
             <section className="lg:min-w-150 flex flex-col gap-6 pb-3">
 

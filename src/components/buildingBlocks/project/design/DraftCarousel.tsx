@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronRight, ChevronLeft } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 export const DraftItem: FunctionComponent<{ value: string }> = ({ value }) => {
 
@@ -14,7 +15,7 @@ export const DraftItem: FunctionComponent<{ value: string }> = ({ value }) => {
 
     return (
         <CarouselItem className="hover:[&>img]:opacity-100! h-full" onClick={() => setCover(!cover)}>
-            <img src={`${value}`} alt="" className={`${cover ? 'object-cover' : 'object-contain' } max-h-168.5 w-full h-full opacity-70 transition-all`}/>
+            <img src={asset(value)} alt="" className={`${cover ? 'object-cover' : 'object-contain' } max-h-168.5 w-full h-full opacity-70 transition-all`}/>
         </CarouselItem>
     )
 

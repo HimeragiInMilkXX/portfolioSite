@@ -13,6 +13,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import useViewport from "@/utils/useViewport"
+import { asset } from "@/lib/assets"
 
 const Dev: FunctionComponent<{ dev: ProjectDetails_Dev }> = ({ dev }) => {
 
@@ -41,7 +42,7 @@ const Dev: FunctionComponent<{ dev: ProjectDetails_Dev }> = ({ dev }) => {
                                             width >= 768 ?
                                                 <HoverCard key={index}>
                                                     <HoverCardTrigger className="flex flex-col gap-3 items-center">
-                                                        <img src={`/icons/${value.toLowerCase()}.png`} alt="" className="aspect-square object-contain basis-0 grow" />
+                                                        <img src={asset(`/icons/${value.toLowerCase()}.png`)} alt="" className="aspect-square object-contain basis-0 grow" />
                                                         <p className="text-center text-xs"> {value} </p>
                                                     </HoverCardTrigger>
                                                     <HoverCardContent>
@@ -50,7 +51,7 @@ const Dev: FunctionComponent<{ dev: ProjectDetails_Dev }> = ({ dev }) => {
                                                 </HoverCard> :
                                                 <Popover key={index}>
                                                     <PopoverTrigger>
-                                                        <img src={`/icons/${value.toLowerCase()}.png`} alt="" className="aspect-square object-contain basis-0 grow" />
+                                                        <img src={asset(`/icons/${value.toLowerCase()}.png`)} alt="" className="aspect-square object-contain basis-0 grow" />
                                                         <p className="text-center text-xs"> {value} </p>
                                                     </PopoverTrigger>
                                                     <PopoverContent>

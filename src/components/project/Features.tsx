@@ -5,6 +5,7 @@ import ImgTextHori from "../buildingBlocks/ImgTextHori"
 import { useParams } from "react-router-dom"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
+import { asset } from "@/lib/assets"
 
 const Features: FunctionComponent<{ features: { [ title: string ]: ProjectDetails_Features } }> = ( {features} ) => {
 
@@ -45,7 +46,7 @@ const Features: FunctionComponent<{ features: { [ title: string ]: ProjectDetail
                 <div className="flex-col w-full flex gap-12 justify-center items-center" ref={containerRef}>
                     {
                         Object.entries( features ).map( ([ title, { photo, description } ]) => {
-                            return <ImgTextHori key={photo} url={`/project/${project}/features/${photo}`} title={title} content={description} classes="featureItem"/>
+                            return <ImgTextHori key={photo} url={asset(`/project/${project}/features/${photo}`)} title={title} content={description} classes="featureItem"/>
                         } )
                     }
                 </div>
@@ -56,7 +57,7 @@ const Features: FunctionComponent<{ features: { [ title: string ]: ProjectDetail
                     Object.entries( features ).map( ([ title, { photo } ]) => {
                         return <section className="basis-0 min-w-[320px] grow flex-col gap-3 flex" key={photo}>
 
-                            <img src={`/project/${project}/features/${photo}`} alt="" />
+                            <img src={asset(`/project/${project}/features/${photo}`)} alt="" />
                             <h3 className="text-3xl font-medium whitespace-nowrap text-center"> {title} </h3>
 
                         </section>

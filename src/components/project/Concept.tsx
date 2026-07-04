@@ -2,6 +2,7 @@ import type { FunctionComponent } from "react"
 import FlipCard from "../buildingBlocks/project/FlipCard"
 import HashSection from "../buildingBlocks/HashSection"
 import NumberBall from "../buildingBlocks/NumberBall"
+import { asset } from "@/lib/assets"
 
 const ConceptBlock: FunctionComponent<{ number: number, wh: string, content: string, question: string, classes?: string }> = ({ number, wh, question, content, classes = "" }) => {
 
@@ -27,7 +28,7 @@ const Concept: FunctionComponent<{ concept: { why: string, what: string, how: st
 
             <h2 className="max-[554px]:hidden absolute text-8xl font-extrabold text-gray-200 -top-[5.2rem] mr-12 md:mr-3 right-0"> CONCEPT </h2>
 
-            <p className="min-[1049px]:block hidden basis-1/4 self-center"><img src="/project/concept.png" alt="oscar's working" className="object-contain" style={{ filter: 'drop-shadow(0px 2px 0.1rem #000000)'}}/></p>
+            <p className="min-[1049px]:block hidden basis-1/4 self-center"><img src={asset("/project/concept.png")} alt="oscar's working" className="object-contain" style={{ filter: 'drop-shadow(0px 2px 0.1rem #000000)'}}/></p>
 
             <div className="grow-4 basis-0 flex gap-9">
                 <FlipCard classes="grow basis-0 h-full"

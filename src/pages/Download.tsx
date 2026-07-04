@@ -7,6 +7,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
+import { asset } from "@/lib/assets";
 
 
 const Download: FunctionComponent<{ classes?: string }> = ({ classes = "" }) => {
@@ -22,7 +23,7 @@ const Download: FunctionComponent<{ classes?: string }> = ({ classes = "" }) => 
                         Here you can download my documents for reference, thank you for viewing and checking out
                     </DialogDescription>
                 </DialogHeader>
-                <a href="/download/CV2026.pdf" className="text-blue-800 underline" download="Ang Chun Ho_CV_2026"> Download my CV </a>
+                <a href={asset("/download/CV2026.pdf")} className="text-blue-800 underline" download="Ang Chun Ho_CV_2026"> Download my CV </a>
             </DialogContent>
         </Dialog>
 

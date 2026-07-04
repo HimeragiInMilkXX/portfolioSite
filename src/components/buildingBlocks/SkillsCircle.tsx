@@ -1,5 +1,6 @@
 import { useState, type FunctionComponent } from "react";
 import gsap from "gsap";
+import { asset } from "@/lib/assets";
 
 const SkillsCircle: FunctionComponent<{ skillset: string, underlayerClasses?: string }> = ({ skillset, underlayerClasses }) => {
 
@@ -33,9 +34,9 @@ const SkillsCircle: FunctionComponent<{ skillset: string, underlayerClasses?: st
 
             `} }>
 
-                <div className={`${underlayerClasses} top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full aspect-square rounded-full absolute -z-1 bg-center bg-cover bg-no-repeat`} style={{ backgroundImage: `url(/about/skills/${skillset.toUpperCase()}.png)` }}></div>
+                <div className={`${underlayerClasses} top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full aspect-square rounded-full absolute -z-1 bg-center bg-cover bg-no-repeat`} style={{ backgroundImage: `url(${asset(`/about/skills/${skillset.toUpperCase()}.png`)})` }}></div>
                 <div className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 aspect-square rounded-full shadow-2xl bg-white absolute bg-center bg-size-[50%] bg-no-repeat"
-                        style={{ backgroundImage: `url(/about/skills/${skillset.toUpperCase()}_icon.svg)`}}
+                        style={{ backgroundImage: `url(${asset(`/about/skills/${skillset.toUpperCase()}_icon.svg`)})`}}
                         onMouseEnter={() => draw( true )} onMouseLeave={() => draw( false )}></div>
                 <h3 className="absolute w-full text-center top-3 text-2xl font-light" style={{ opacity: opacity }}> {skillset} </h3>
 

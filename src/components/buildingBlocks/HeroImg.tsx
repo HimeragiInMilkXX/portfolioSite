@@ -1,5 +1,6 @@
 import { useEffect, useRef, type FunctionComponent } from "react";
 import gsap from 'gsap'
+import { asset } from "@/lib/assets";
 
 const HeroImg: FunctionComponent<{ classes?: string, url?: string }> = ({ classes, url = "home.jpg" }) => {
 
@@ -25,7 +26,7 @@ const HeroImg: FunctionComponent<{ classes?: string, url?: string }> = ({ classe
 
     }, [])
 
-    return ( <img src={`/home/hero/${url}`} alt="" className={`${classes} aspect-square object-cover relative`} ref={imgRef}/> )
+    return ( <img src={asset(`/home/hero/${url}`)} alt="" className={`${classes} aspect-square object-cover relative`} ref={imgRef}/> )
     
 }
 

@@ -6,6 +6,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import { asset } from "@/lib/assets"
 
 const HeroGallery: FunctionComponent<{ classes?: string, displayName: string, desc: string, gallery: string[], project: string }> = ({ classes = "", displayName, desc, gallery, project }) => {
 
@@ -51,7 +52,7 @@ const HeroGallery: FunctionComponent<{ classes?: string, displayName: string, de
                 {
                     gallery.map( ( fileName, index ) => {
 
-                        return <CarouselItem key={index} className="m-0 p-0"><img src={`/project/${project}/${fileName}`} className="h-full object-cover w-full"/></CarouselItem>
+                        return <CarouselItem key={index} className="m-0 p-0"><img src={asset(`/project/${project}/${fileName}`)} className="h-full object-cover w-full"/></CarouselItem>
 
                     })
                 }

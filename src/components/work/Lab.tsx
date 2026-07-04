@@ -1,4 +1,5 @@
 import HashSection from "../buildingBlocks/HashSection"
+import { asset } from "@/lib/assets"
 
 const Lab = () => {
 
@@ -6,7 +7,7 @@ const Lab = () => {
 
         <HashSection id="lab" classes="w-full flex gap-12 justify-center items-center px-6 relative">
 
-            <img src="/work/lab/lab.png" alt="" className="max-md:w-10/12 w-5/12 object-cover aspect-square max-lg:absolute max-lg:w-full overflow-visible max-lg:opacity-10"/>
+            <img src={asset("/work/lab/lab.png")} alt="" className="max-md:w-10/12 w-5/12 object-cover aspect-square max-lg:absolute max-lg:w-full overflow-visible max-lg:opacity-10"/>
 
             <section className="flex flex-col flex-3">
 
@@ -20,8 +21,8 @@ const Lab = () => {
 
                     <div className="grid grid-cols-1 grid-rows-[repeat(2,12vw)] gap-6 max-lg:grid-rows-[repeat(2,30vw)]">
 
-                        <img src="/work/lab/1.gif" alt="" className="object-cover w-full h-full" />
-                        <img src="/work/lab/1.gif" alt="" className="object-cover w-full h-full" />
+                        <img src={asset("/work/lab/1.gif")} alt="" className="object-cover w-full h-full" />
+                        <img src={asset("/work/lab/1.gif")} alt="" className="object-cover w-full h-full" />
 
                     </div>
 
