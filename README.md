@@ -1,13 +1,13 @@
 # Oscar Portfolio Website（AWS ホスティング）
 
-このリポジトリは、AWS 上にホスティングしているポートフォリオサイトのコードです。  
+このリポジトリは、Github 上にホスティングしているポートフォリオサイトのコードです。  
 実際のサイトはこちらからご覧いただけます：  
-https://d2qjfmxptfqch4.cloudfront.net/
+https://himeragiinmilkxx.github.io/portfolioSite/
 
 ## 子ブログについて
 
 ポートフォリオ内でのブログはこちらです：  
-https://d1ulrv6ofvvsmv.cloudfront.net/
+https://himeragiinmilkxx.github.io/portfolioBlog-view/
 
 ブログのソースコードは、以下の GitHub リポジトリに分割して管理しています。
 
@@ -29,7 +29,7 @@ https://d1ulrv6ofvvsmv.cloudfront.net/
 ## 使用技術
 
 - フロントエンド：React.js, shadcn/ui  
-- DevOps：AWS S3 バケット, CloudFront  
+- DevOps：AWS S3 バケット, CloudFront （元）
 
 ## サイトについての補足
 
