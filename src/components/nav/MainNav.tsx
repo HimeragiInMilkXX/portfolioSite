@@ -34,7 +34,7 @@ function MainNav() {
                 <NavLink to="about"/>
                 <NavLink to="work"/>
                 <NavLink to="services"/>
-                <a href="https://d1ulrv6ofvvsmv.cloudfront.net/" target="_blank" className="flex items-center gap-1.5"> BLOG<ExternalLink/> </a>
+                <a href="https://himeragiinmilkxx.github.io/portfolioBlog-view/" target="_blank" className="flex items-center gap-1.5"> BLOG<ExternalLink/> </a>
                 <NavLink to="contact"/>
                 <Download/>
 
@@ -67,7 +67,7 @@ function MainNav() {
                             <NavLink to="" setOpen={setOpen}/>
                             <NavLink to="work" setOpen={setOpen}/>
                             <NavLink to="about" setOpen={setOpen}/>
-                            <a href="https://d1ulrv6ofvvsmv.cloudfront.net/" target="_blank" className="flex items-center gap-1.5 justify-end"> Blog<ExternalLink/> </a>
+                            <a href="https://himeragiinmilkxx.github.io/portfolioBlog-view/" target="_blank" className="flex items-center gap-1.5 justify-end"> Blog<ExternalLink/> </a>
                             <NavLink to="services" setOpen={setOpen}/>
                             <NavLink to="contact" setOpen={setOpen}/>
 
